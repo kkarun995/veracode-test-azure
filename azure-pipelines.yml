@@ -25,5 +25,5 @@ steps:
     AnalysisService: 'veracode-api'
     veracodeAppProfile: 'Azure-demo-Arun'
     version: '$(build.buildNumber)'
-    filepath: 'app/target/your-application.jar'
+    filepath: '$(System.DefaultWorkingDirectory)/app/target/your-application.jar'
     maximumWaitTime: '360'
